@@ -1,59 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VerifyGF Privacy Policy</title>
-    <meta name="description" content="Privacy Policy for VerifyGF.">
-    <meta property="og:title" content="VerifyGF Privacy Policy">
-    <meta property="og:description" content="How VerifyGF handles barcode lookups, camera access, and local storage.">
-    <meta property="og:image" content="https://verifygf.pages.dev/assets/verifygf-og.svg">
-    <meta property="og:url" content="https://verifygf.pages.dev/privacy/">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="/styles.css">
+
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #111111;
+            --secondary: #555555;
+            --accent: #00ad52;
+            --card: #f5f5f7;
+            --border: #e5e5ea;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #000000;
+                --text: #f5f5f7;
+                --secondary: #a1a1aa;
+                --accent: #22c55e;
+                --card: #111111;
+                --border: #222222;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+                "SF Pro Text", Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .header {
+            margin-bottom: 40px;
+        }
+
+        .brand {
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            margin-bottom: 10px;
+        }
+
+        .brand .gf {
+            color: var(--accent);
+        }
+
+        .updated {
+            color: var(--secondary);
+            font-size: 0.95rem;
+        }
+
+        section {
+            margin-bottom: 32px;
+            padding: 24px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+        }
+
+        h1, h2, h3 {
+            margin-top: 0;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+
+        h3 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin: 0 0 14px;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            color: var(--secondary);
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
+
 <body>
-    <main class="shell shell-narrow">
-        <article class="card prose">
-            <a class="back-link" href="/">Back to VerifyGF</a>
-            <h1>Privacy Policy</h1>
-            <p class="muted">Last updated: May 2026</p>
+    <div class="container">
 
-            <p>VerifyGF is designed to help users identify possible gluten-related concerns in packaged food products. Your privacy is important, and the app is designed to minimize data collection whenever possible.</p>
+        <div class="header">
+            <div class="brand">
+                VERIFY<span class="gf">GF</span>
+            </div>
 
+            <div class="updated">
+                Privacy Policy • Last updated: May 2026
+            </div>
+        </div>
+
+        <section>
+            <p>
+                VerifyGF is designed to help users identify possible
+                gluten-related concerns in packaged food products.
+                Your privacy is important, and the app is designed
+                to minimize data collection whenever possible.
+            </p>
+        </section>
+
+        <section>
             <h2>Information We Collect</h2>
-            <p>VerifyGF does not require an account and does not collect personal profile information such as your name, email address, precise location, or health profile.</p>
-            <p>The app does not use third-party advertising or analytics SDKs.</p>
 
+            <p>
+                VerifyGF does not require an account and does not collect
+                personal profile information such as your name, email address,
+                precise location, or health profile.
+            </p>
+
+            <p>
+                The app does not use third-party advertising or analytics SDKs.
+            </p>
+        </section>
+
+        <section>
             <h2>Camera Access</h2>
-            <p>VerifyGF uses your device camera solely for barcode scanning and reading ingredient labels. Barcode video frames, captured ingredient photos, and recognized label text are processed on-device by the app. Camera images, captured ingredient photos, and video are not stored or uploaded by the app.</p>
 
+            <p>
+                VerifyGF uses your device camera solely for barcode scanning and reading ingredient labels. 
+                Barcode video frames, captured ingredient photos, and recognized label text are processed on-device by the app. 
+                Camera images, captured ingredient photos, and video are not stored or uploaded by the app.
+            </p>
+        </section>
+
+        <section>
             <h2>Barcode and Product Lookup Requests</h2>
-            <p>When you scan a barcode, the barcode number may be sent to external food databases in order to retrieve product information.</p>
+
+            <p>
+                When you scan a barcode, the barcode number may be sent to
+                external food databases in order to retrieve product information.
+            </p>
 
             <h3>Open Food Facts</h3>
-            <p>Barcode lookup requests may be sent directly to Open Food Facts to retrieve publicly available product information, including ingredients, allergens, labels, and product metadata.</p>
+
+            <p>
+                Barcode lookup requests may be sent directly to Open Food Facts
+                to retrieve publicly available product information, including
+                ingredients, allergens, labels, and product metadata.
+            </p>
 
             <h3>USDA FoodData Central</h3>
-            <p>If a product is not available through Open Food Facts, VerifyGF may send the barcode number through a Cloudflare Worker service that securely forwards the request to USDA FoodData Central. That service is used only to forward barcode lookup requests to USDA FoodData Central. VerifyGF does not sell these requests, use them for advertising, or use them to track users across apps or websites.</p>
-            <p>Hosting infrastructure may process temporary request metadata for security, debugging, abuse prevention, and service reliability.</p>
-            <p>These requests are used only to retrieve product information associated with the scanned barcode.</p>
 
+            <p>
+                If a product is not available through Open Food Facts,
+                VerifyGF may send the barcode number through a Cloudflare Worker
+                service that securely forwards the request to USDA FoodData Central.
+                That service is used only to forward barcode lookup
+                requests to USDA FoodData Central. VerifyGF does not sell these requests,
+                use them for advertising, or use them to track users across apps or
+                websites. Hosting infrastructure may process temporary request metadata
+                for security, debugging, abuse prevention, and service reliability.
+            </p>
+
+            <p>
+                These requests are used only to retrieve product information
+                associated with the scanned barcode.
+            </p>
+        </section>
+
+        <section>
             <h2>Local Device Storage</h2>
-            <p>VerifyGF stores recent scans and product cache data locally on your device to improve app performance and usability.</p>
-            <p>This information is not used to identify you and is not shared or sold by the app.</p>
 
+            <p>
+                VerifyGF stores recent scans and product cache data locally
+                on your device to improve app performance and usability.
+            </p>
+
+            <p>
+                This information is not used to identify you and is not shared
+                or sold by the app.
+            </p>
+        </section>  
+        
+        <!--
+        <section>
+            <h2>Tip Jar Note</h2>
+
+            <p>
+                If you choose to support the developer through a tip, payment is processed by 
+                Apple through the App Store. VerifyGF does not receive or store your payment card information.
+            </p>
+            
+        </section>
+        -->
+
+        <section>
             <h2>Medical Disclaimer</h2>
-            <p>VerifyGF provides informational gluten-risk screening only and does not provide medical advice, diagnosis, or treatment.</p>
-            <p>Product ingredients, manufacturing processes, and labeling may change over time. Always verify packaging labels and manufacturer information, especially for celiac disease or severe allergies.</p>
 
+            <p>
+                VerifyGF provides informational gluten-risk screening only and
+                does not provide medical advice, diagnosis, or treatment.
+            </p>
+
+            <p>
+                Product ingredients, manufacturing processes, and labeling may
+                change over time. Always verify packaging labels and manufacturer
+                information, especially for celiac disease or severe allergies.
+            </p>
+        </section>
+
+        <section>
             <h2>Changes to This Policy</h2>
-            <p>This Privacy Policy may be updated from time to time. Updates will be reflected by the &ldquo;Last updated&rdquo; date above.</p>
 
+            <p>
+                This Privacy Policy may be updated from time to time.
+                Updates will be reflected by the “Last updated” date above.
+            </p>
+        </section>
+
+        <section>
             <h2>Contact</h2>
-            <p>If you have questions about this Privacy Policy, you may contact the developer through the App Store listing contact information.</p>
-        </article>
-    </main>
+
+            <p>
+                If you have questions about this Privacy Policy,
+                you may contact the developer through the
+                App Store listing contact information.
+            </p>
+        </section>
+
+        <div class="footer">
+            VERIFY<span class="gf">GF</span>
+        </div>
+
+    </div>
 </body>
 </html>
