@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Open in VerifyGF</title>
+    <meta name="description" content="Open this scan in VerifyGF.">
+    <meta property="og:title" content="Open in VerifyGF">
+    <meta property="og:description" content="Use VerifyGF to open this shared barcode scan and view the full product result.">
+    <meta property="og:image" content="https://verifygf.pages.dev/assets/verifygf-og.svg">
+    <meta property="og:url" content="https://verifygf.pages.dev/app/scan/">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <main class="shell shell-narrow">
+        <section class="card">
+            <div class="eyebrow">Shared by VerifyGF</div>
+            <h1>Open in Verify<span>GF</span></h1>
+            <p id="scan-message" class="lede">Checking this link for a shared barcode.</p>
+            <div class="scan-code" id="barcode-chip" hidden></div>
+            <div class="actions">
+                <a class="button" id="open-button" href="verifygf://scan">Open in VerifyGF</a>
+                <a class="button button-secondary" href="/">About VerifyGF</a>
+            </div>
+            <p class="muted small">If the app does not open, make sure VerifyGF is installed and then try again.</p>
+        </section>
+    </main>
+    <script src="/site.js"></script>
+</body>
+</html>
