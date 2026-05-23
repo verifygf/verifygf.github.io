@@ -77,46 +77,6 @@
             max-width: 720px;
         }
 
-        .pill-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin: 28px 0;
-        }
-
-        .pill {
-            padding: 8px 13px;
-            border-radius: 999px;
-            background: var(--accent-soft);
-            border: 1px solid var(--border);
-            color: var(--text);
-            font-size: 0.92rem;
-            font-weight: 500;
-        }
-
-        .cta-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 28px;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 12px 18px;
-            border-radius: 14px;
-            background: var(--accent);
-            color: white;
-            font-weight: 600;
-            text-decoration: none;
-        }
-
-        .button.secondary {
-            background: var(--card);
-            color: var(--text);
-            border: 1px solid var(--border);
-        }
-
         .grid {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -193,14 +153,6 @@
             .grid {
                 grid-template-columns: 1fr;
             }
-
-            .cta-row {
-                flex-direction: column;
-            }
-
-            .button {
-                text-align: center;
-            }
         }
     </style>
 </head>
@@ -224,6 +176,7 @@
         </header>
 
         <div id="features" class="grid">
+
             <div class="card">
                 <h3>Scan a Barcode or Ingredient Label</h3>
                 <p>
@@ -237,7 +190,7 @@
                 </p>
             </div>
 
-        <div class="card">
+            <div class="card">
                 <h3>Private by Design</h3>
                 <p>
                     VerifyGF does not require an account and does not collect personal
@@ -246,20 +199,21 @@
                 <p>
                     Recent scans and cached products stay stored locally on your device.
                 </p>
-                <p> <a href="https://verifygf.pages.dev/privacy/">Privacy Policy</a></p>
+                <p>
+                    <a href="https://verifygf.pages.dev/privacy/">Privacy Policy</a>
+                </p>
             </div>
 
             <div class="card">
                 <h3>Ways to Double-Check</h3>
                 <p>
                     Product databases can be incomplete or outdated. VerifyGF includes
-                    manual verification tools so you can search the product or specific 
+                    manual verification tools so you can search the product or specific
                     ingredients when something needs a closer look.
                 </p>
             </div>
 
-        
-             <div class="card">
+            <div class="card">
                 <h3>Built for U.S. Labels</h3>
                 <p>
                     VerifyGF checks ingredients, allergen statements, gluten-free labels,
@@ -267,14 +221,31 @@
                     standards and guidance.
                 </p>
             </div>
+
         </div>
 
         <section class="note">
+            <h2>Built to Be Useful</h2>
+
+            <p>
+                VerifyGF was created to provide a simple and privacy-focused way
+                to help people evaluate food products for gluten concerns.
+            </p>
+
+            <p>
+                Questions, suggestions, or feedback are always welcome at
+                <a href="mailto:verifygf@icloud.com">verifygf@icloud.com</a>.
+            </p>
+        </section>
+
+        <section class="note">
             <h2>Important Disclaimer</h2>
+
             <p>
                 VerifyGF is an informational screening tool only and does not guarantee
                 a product is gluten-free or safe for individuals with celiac disease or allergies.
             </p>
+
             <p>
                 Ingredients and manufacturing processes can change over time. Always verify
                 packaging labels and manufacturer information before consuming a product.
