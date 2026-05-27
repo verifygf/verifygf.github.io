@@ -1,144 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>VerifyGF</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet"
+href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<title>VerifyGF</title>
 
-<style> :root { --bg: #ffffff; --text: #111111; --secondary: #555555; --accent: #00ad52; --accent-soft: rgba(0, 173, 82, 0.12); --card: #f5f5f7; --border: #e5e5ea; } @media (prefers-color-scheme: dark) { :root { --bg: #000000; --text: #f5f5f7; --secondary: #a1a1aa; --accent: #22c55e; --accent-soft: rgba(34, 197, 94, 0.16); --card: #111111; --border: #222222; } } * { box-sizing: border-box; } body { margin: 0; padding: 40px 20px; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", Helvetica, Arial, sans-serif; line-height: 1.7; } .container { max-width: 860px; margin: 0 auto; } .hero { margin-bottom: 36px; } .app-store-button { display: inline-block; margin-top: 28px; } .app-store-button img { display: block; height: 54px; width: auto; } h3 .material-icons { font-size: 1.15rem; vertical-align: middle; position: relative; top: -1px; margin-right: 6px; } .brand { font-size: 2.6rem; font-weight: 600; letter-spacing: 0.08em; margin-bottom: 14px; } .brand .gf, .footer .gf { color: var(--accent); } .support-link a { display: inline-flex; align-items: center; gap: 6px; font-weight: 500; } .tagline { font-size: 1.35rem; font-weight: 500; line-height: 1.35; max-width: 680px; margin-bottom: 16px; } .subtext { color: var(--secondary); font-size: 1rem; max-width: 720px; } .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 28px; } section, .card { padding: 24px; background: var(--card); border: 1px solid var(--border); border-radius: 18px; } h1, h2, h3 { margin-top: 0; line-height: 1.2; } h2 { font-size: 1.3rem; margin-bottom: 12px; } h3 { font-size: 1.05rem; margin-bottom: 8px; } p { margin: 0 0 14px; } p:last-child { margin-bottom: 0; } a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; } .note { margin-top: 30px; } .footer { margin-top: 40px; text-align: center; color: var(--secondary); font-size: 0.9rem; letter-spacing: 0.08em; font-weight: 600; } @media (max-width: 700px) { body { padding: 28px 16px; } .brand { font-size: 2.1rem; } .tagline { font-size: 1.18rem; } .grid { grid-template-columns: 1fr; } } </style>
+<style>
+:root {
+--bg: #ffffff;
+--text: #111111;
+--secondary: #555555;
+--accent: #00ad52;
+--accent-soft: rgba(0, 173, 82, 0.12);
+--card: #f5f5f7;
+--border: #e5e5ea;
+}
+
+@media (prefers-color-scheme: dark) {
+:root {
+--bg: #000000;
+--text: #f5f5f7;
+--secondary: #a1a1aa;
+--accent: #22c55e;
+--accent-soft: rgba(34, 197, 94, 0.16);
+--card: #111111;
+--border: #222222;
+}
+}
+
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+padding: 40px 20px;
+background: var(--bg);
+color: var(--text);
+font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+"SF Pro Text", Helvetica, Arial, sans-serif;
+line-height: 1.7;
+}
+
+.container {
+max-width: 860px;
+margin: 0 auto;
+}
+
+.hero {
+margin-bottom: 36px;
+}
+
+.app-store-button {
+display: inline-block;
+margin-top: 28px;
+}
+
+.app-store-button img {
+display: block;
+height: 54px;
+width: auto;
+}
+
+h3 .material-icons {
+font-size: 1.15rem;
+vertical-align: middle;
+position: relative;
+top: -1px;
+margin-right: 6px;
+}
+
+.brand {
+font-size: 2.6rem;
+font-weight: 600;
+letter-spacing: 0.08em;
+margin-bottom: 14px;
+}
+
+.brand .gf,
+.footer .gf {
+color: var(--accent);
+}
+
+.support-link a {
+display: inline-flex;
+align-items: center;
+gap: 6px;
+font-weight: 500;
+}
+
+.tagline {
+font-size: 1.35rem;
+font-weight: 500;
+line-height: 1.35;
+max-width: 680px;
+margin-bottom: 16px;
+}
+
+.subtext {
+color: var(--secondary);
+font-size: 1rem;
+max-width: 720px;
+}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 18px;
+margin-top: 28px;
+}
+
+section,
+.card {
+padding: 24px;
+background: var(--card);
+border: 1px solid var(--border);
+border-radius: 18px;
+}
+
+h1, h2, h3 {
+margin-top: 0;
+line-height: 1.2;
+}
+
+h2 {
+font-size: 1.3rem;
+margin-bottom: 12px;
+}
+
+h3 {
+font-size: 1.05rem;
+margin-bottom: 8px;
+}
+
+p {
+margin: 0 0 14px;
+}
+
+p:last-child {
+margin-bottom: 0;
+}
+
+a {
+color: var(--accent);
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+.note {
+margin-top: 30px;
+}
+
+.footer {
+margin-top: 40px;
+text-align: center;
+color: var(--secondary);
+font-size: 0.9rem;
+letter-spacing: 0.08em;
+font-weight: 600;
+}
+
+@media (max-width: 700px) {
+body {
+padding: 28px 16px;
+}
+
+.brand {
+font-size: 2.1rem;
+}
+
+.tagline {
+font-size: 1.18rem;
+}
+
+.grid {
+grid-template-columns: 1fr;
+}
+}
+</style>
 </head>
 
 <body>
-    <header class="hero">
+<div class="container">
 
-    <div class="brand">
-        VERIFY<span class="gf">GF</span>
-    </div>
+<header class="hero">
+<div class="brand">
+VERIFY<span class="gf">GF</span>
+</div>
 
-    <div class="tagline">
-        A completely free barcode and ingredient label scanner for gluten-free checking.
-    </div>
+<div class="tagline">
+A completely free barcode and ingredient label scanner for gluten-free checking.
+</div>
 
-    <a
-        href="https://apps.apple.com/us/app/verifygf-gluten-free-scanner/id6769617253"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="app-store-button"
-    >
-        <picture>
-            <source
-                srcset="/assets/download-on-the-app-store-white.svg"
-                media="(prefers-color-scheme: dark)"
-            >
-
-            <img
-                src="/assets/download-on-the-app-store-black.svg"
-                alt="Download on the App Store"
-            >
-        </picture>
-    </a>
-
-    <p class="subtext">
-        VerifyGF was built to be simple, useful, and straightforward.
-        No accounts. No subscriptions. No tracking. No ads.
-    </p>
-
+            <p class="subtext">
+                VerifyGF was built to be simple, useful, and straightforward.
+                No accounts. No subscriptions. No tracking. No ads.
+            </p>
+<a
+href="https://apps.apple.com/us/app/verifygf-gluten-free-scanner/id6769617253"
+target="_blank"
+rel="noopener noreferrer"
+class="app-store-button"
+>
+<picture>
+<source
+srcset="/assets/download-on-the-app-store-black.svg"
+media="(prefers-color-scheme: dark)"
+>
+<img
+src="/assets/download-on-the-app-store-white.svg"
+alt="Download on the App Store"
+height="54"
+>
+</picture>
+</a>
+            <p class="subtext">
+                VerifyGF was built to be simple, useful, and straightforward.
+                No accounts. No subscriptions. No tracking. No ads.
+            </p>
 </header>
 
-        <div id="features" class="grid">
+<div id="features" class="grid">
 
-            <div class="card">
-                <h3>Scan a Barcode or Ingredient Label
-                <span class="material-icons">center_focus_strong</span></h3>
-                <p>
-                    Scan a barcode to look up product information using Open Food Facts.
-                    If information is missing, VerifyGF can fall back to USDA FoodData
-                    Central when available.
-                </p>
-                <p>
-                    If a product is not in the databases or you don't have an internet connection, you can scan 
-                    the ingredient label directly with the built-in OCR scanner. Processing is handled completely 
-                    on your device.
-                </p>
-            </div>
+<div class="card">
+<h3>Scan a Barcode or Ingredient Label
+<span class="material-icons">center_focus_strong</span></h3>
+<p>
+Scan a barcode to look up product information using Open Food Facts.
+If information is missing, VerifyGF can fall back to USDA FoodData
+Central when available.
+</p>
+<p>
+If a product is not in the databases or you don't have an internet connection, you can scan 
+the ingredient label directly with the built-in OCR scanner. Processing is handled completely 
+on your device.
+</p>
+</div>
 
-            <div class="card">
-                <h3>Private by Design <span class="material-icons">lock</span></h3>
-                <p>
-                    VerifyGF does not require an account and does not collect personal
-                    profiles, health information, or precise location data.
-                </p>
-                <p>
-                    Recent scans and cached products stay stored locally on your device.
-                </p>
-                <p>
-                    <a href="https://verifygf.pages.dev/privacy/">Privacy Policy</a>
-                </p>
-            </div>
+<div class="card">
+<h3>Private by Design <span class="material-icons">lock</span></h3>
+<p>
+VerifyGF does not require an account and does not collect personal
+profiles, health information, or precise location data.
+</p>
+<p>
+Recent scans and cached products stay stored locally on your device.
+</p>
+<p>
+<a href="https://verifygf.pages.dev/privacy/">Privacy Policy</a>
+</p>
+</div>
 
-            <div class="card">
-                <h3>Ways to Double-Check <span class="material-icons">search</span></h3>
-                <p>
-                    Product databases can be incomplete or outdated. VerifyGF includes
-                    manual verification tools so you can search the product or specific
-                    ingredients when something needs a closer look.
-                </p>
-            </div>
+<div class="card">
+<h3>Ways to Double-Check <span class="material-icons">search</span></h3>
+<p>
+Product databases can be incomplete or outdated. VerifyGF includes
+manual verification tools so you can search the product or specific
+ingredients when something needs a closer look.
+</p>
+</div>
 
-            <div class="card">
-                <h3>Built for U.S. Labels 🇺🇸</h3>
-                <p>
-                    VerifyGF checks ingredients, allergen statements, gluten-free labels,
-                    certifications, and common warning signs using United States labeling
-                    standards and guidance.
-                </p>
-            </div>
+<div class="card">
+<h3>Built for U.S. Labels 🇺🇸</h3>
+<p>
+VerifyGF checks ingredients, allergen statements, gluten-free labels,
+certifications, and common warning signs using United States labeling
+standards and guidance.
+</p>
+</div>
 
-        </div>
+</div>
 
-        <section class="note">
-            <h2>Built to Be Useful</h2>
+<section class="note">
+<h2>Built to Be Useful</h2>
 
-            <p>
-                VerifyGF was created to provide a simple and privacy-focused way
-                to help people evaluate food products for gluten concerns.
-            </p>
+<p>
+VerifyGF was created to provide a simple and privacy-focused way
+to help people evaluate food products for gluten concerns.
+</p>
 
-            <p>
-                Questions, suggestions, or feedback are always welcome at
-                <a href="mailto:verifygf@icloud.com">verifygf@icloud.com</a>.
-            </p>
+<p>
+Questions, suggestions, or feedback are always welcome at
+<a href="mailto:verifygf@icloud.com">verifygf@icloud.com</a>.
+</p>
 
-           <!-- <p>If VerifyGF has brought you value and you'd like to support the project,
-                feel free to
-                <a href="https://ko-fi.com/verifygf"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    buy me a coffee on Ko-fi
-                </a></p> -->
-        </section>
+<!-- <p>If VerifyGF has brought you value and you'd like to support the project,
+               feel free to
+               <a href="https://ko-fi.com/verifygf"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                   buy me a coffee on Ko-fi
+               </a></p> -->
+</section>
 
-        <section class="note">
-            <h2>Important Disclaimer</h2>
+<section class="note">
+<h2>Important Disclaimer</h2>
 
-            <p>
-                VerifyGF is an informational screening tool only and does not guarantee
-                a product is gluten-free or safe for individuals with celiac disease or allergies.
-            </p>
+<p>
+VerifyGF is an informational screening tool only and does not guarantee
+a product is gluten-free or safe for individuals with celiac disease or allergies.
+</p>
 
-            <p>
-                Ingredients and manufacturing processes can change over time. Always verify
-                packaging labels and manufacturer information before consuming a product.
-            </p>
-        </section>
+<p>
+Ingredients and manufacturing processes can change over time. Always verify
+packaging labels and manufacturer information before consuming a product.
+</p>
+</section>
 
-        <div class="footer">
-            VERIFY<span class="gf">GF</span>
-        </div>
+<div class="footer">
+VERIFY<span class="gf">GF</span>
+</div>
 
-    </div>
+</div>
 </body>
 </html>
